@@ -1,2 +1,2 @@
 # Backend
-ALicja's Kosak solutions to homeworks
+Alicja's Kosak solutions to homeworks
