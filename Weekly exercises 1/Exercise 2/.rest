@@ -1,0 +1,9 @@
+POST http://localhost:3004/movies
+Content-Type: application/json
+
+{
+    "id": 4,
+    "title": "Star Wars",
+    "director": "Gorge Lucas",
+    "year": 1976
+}
