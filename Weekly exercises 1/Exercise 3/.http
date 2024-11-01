@@ -1,0 +1,27 @@
+GET http://localhost:3004/movies
+Content-Type: application/json
+
+###
+POST http://localhost:3004/movies
+Content-Type: application/json
+
+{
+    "id": 4,
+    "title": "Star War",
+    "director": "Gorg Lucas",
+    "year": 1976
+}
+
+###
+PUT http://localhost:3004/movies/4
+Content-Type: application/json
+
+{
+    "title": "Star Wars",
+    "director": "Gorge Lucas",
+    "year": 1976
+}
+
+###
+DELETE  http://localhost:3004/movies/4
+Content-Type: application/json
