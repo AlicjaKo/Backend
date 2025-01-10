@@ -1,0 +1,42 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ODE2ODU0MTdiMTkyYWUyNDBhOWVjYyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNjUzNDE0MywiZXhwIjoxNzM2NTM3NzQzfQ.80XoKUim-VW9QHq8IpBQh7qLPyWufhiiVg__AuzQWRQ
+###
+POST   http://localhost:3004/auth/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "admin123"
+}
+
+### Get all movies
+GET http://localhost:3004/movies
+
+### Get movie by ID
+GET http://localhost:3004/movies/67816c6baf8062390c1d94f9
+
+### Add a new movie
+POST http://localhost:3004/movies
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ODE2ODU0MTdiMTkyYWUyNDBhOWVjYyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNjUzNDE0MywiZXhwIjoxNzM2NTM3NzQzfQ.80XoKUim-VW9QHq8IpBQh7qLPyWufhiiVg__AuzQWRQ
+
+{
+    "title": "The Dark ",
+    "director": "Christ",
+    "year": 2009
+}
+
+### Update movie by ID
+PUT http://localhost:3004/movies/6781690ff417092fcb678fad
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ODE2ODU0MTdiMTkyYWUyNDBhOWVjYyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNjUzNDE0MywiZXhwIjoxNzM2NTM3NzQzfQ.80XoKUim-VW9QHq8IpBQh7qLPyWufhiiVg__AuzQWRQ
+
+{
+    "title": "The Dark Knight Rises",
+    "director": "Christopher Nolan",
+    "year": 2012
+}
+
+### Delete movie by ID
+
+DELETE http://localhost:3004/movies/67816c6baf8062390c1d94f9
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ODE2ODU0MTdiMTkyYWUyNDBhOWVjYyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNjUzNDE0MywiZXhwIjoxNzM2NTM3NzQzfQ.80XoKUim-VW9QHq8IpBQh7qLPyWufhiiVg__AuzQWRQ

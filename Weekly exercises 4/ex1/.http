@@ -1,0 +1,28 @@
+### Get all movies
+GET http://localhost:3004/movies
+
+### Get movie by ID
+GET http://localhost:3004/movies/5f63bb9f9c4e6f001f7e9a7c
+
+### Add a new movie
+POST http://localhost:3004/movies
+Content-Type: application/json
+
+{
+    "title": "The Dark Knight",
+    "director": "Christopher Nolan",
+    "year": 2008
+}
+
+### Update movie by ID
+PUT http://localhost:3004/movies/5f63bb9f9c4e6f001f7e9a7c
+Content-Type: application/json
+
+{
+    "title": "The Dark Knight Rises",
+    "director": "Christopher Nolan",
+    "year": 2012
+}
+
+### Delete movie by ID
+DELETE http://localhost:3004/movies/5f63bb9f9c4e6f001f7e9a7c
